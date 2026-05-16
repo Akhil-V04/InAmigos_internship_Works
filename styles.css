@@ -525,7 +525,14 @@ body {
 }
 
 .stat-item .stat-icon {
-    font-size: 2.5rem;
+    width: 50px;
+    height: 50px;
+    color: white;
+    stroke: white;
+}
+
+.stat-item .stat-icon path {
+    fill: white;
 }
 
 .stat-item .stat-value {
@@ -747,7 +754,11 @@ body {
 }
 
 .detail-card.expanded .detail-card-body {
-    max-height: 800px;
+    max-height: 1000px;
+}
+
+.detail-card.expanded {
+    grid-column: 1 / -1;
 }
 
 .detail-tag {
@@ -1238,6 +1249,7 @@ footer {
     font-weight: 600;
     margin-bottom: 1.5rem;
     text-transform: capitalize;
+    color: #2563eb;
 }
 
 .footer-section p {
@@ -1253,7 +1265,7 @@ footer {
 }
 
 .footer-section a:hover {
-    color: #10b981;
+    color: #2563eb;
 }
 
 .social-links {
@@ -1282,7 +1294,7 @@ footer {
 }
 
 .social-link:hover {
-    background: #10b981;
+    background: #2563eb;
     transform: translateY(-2px);
 }
 
@@ -1299,7 +1311,7 @@ footer {
 }
 
 .email-button:hover {
-    background: #10b981;
+    background: #2563eb;
 }
 
 .footer-bottom {
@@ -1311,7 +1323,7 @@ footer {
 }
 
 .footer-bottom a {
-    color: #10b981;
+    color: #2563eb;
     text-decoration: none;
 }
 

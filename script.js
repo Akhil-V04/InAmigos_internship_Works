@@ -67,9 +67,18 @@ function toggleDetails(card) {
     allCards.forEach(c => {
         if (c !== card) {
             c.classList.remove('expanded');
+            c.style.display = 'none';
         }
     });
     
     // Toggle current card
-    card.classList.toggle('expanded');
+    if (card.classList.contains('expanded')) {
+        card.classList.remove('expanded');
+        // Show all cards again
+        allCards.forEach(c => {
+            c.style.display = '';
+        });
+    } else {
+        card.classList.add('expanded');
+    }
 }
